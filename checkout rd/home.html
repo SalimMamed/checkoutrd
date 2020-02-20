@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Empresa 100% confiavel
+
+            </a>
+            <div class="row">
+                <div class="col-md-12">
+                    <button id="verNoticias" class="btn btn-primary" a href="">Continuar Comprando</button>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main class="container">
+
+        <form id="checkout" class="row mt-4 ">
+            <div class="col -md-4">
+                <header class="bg-dark text-light p-2"> dados pessoais</header>
+
+                <div class="p-2">
+                    <label for="nomeUsuario">Nome Completo*</label>
+                    <input class="form-control" type="text" id="nomeUsuario" name="nomeUsuario"
+                        placeholder="Digite seu nome completo">
+                </div>
+                <div class="p-2">
+                    <label for="cpfuser">CPF*</label>
+                    <input class="form-control" type="text" id="cpfuser" name="cpfuser" placeholder="Digite seu CPF">
+                </div>
+                <div class="p-2">
+                    <label for="teluser">Telefone*</label>
+                    <input class="form-control" type="tel" id="teluser" name="teluser"
+                        placeholder="Digite seu Telefone">
+                </div>
+                <div class="p-2">
+                    <label for="emailUser">Email*</label>
+                    <input class="form-control" type="email" id="emailUser" name="emailUser"
+                        placeholder="Digite seu Email">
+                </div>
+                <div class="p-2">
+                    <label for="senhaUser"> Senha*</label>
+                    <input class="form-control" type="password" maxlength="18" id="senhaUser" name="senhaUser"
+                        placeholder="Senhas de ate 18 caracteres">
+                </div>
+                <div class="p-2">
+                    <label for="senhaconf">Confirme sua Senha*</label>
+                    <input class="form-control" type="password" maxlength="18" id="senhaconf" name="senhaconf"
+                        placeholder="Por favor Confirmar senha">
+                </div>
+
+            </div>
+            <div class="col -md-4">
+                <header class="bg-dark text-light p-2"> entrega</header>
+                <div class="p-2">
+                    <label for="enduser">Endereço*</label>
+                    <input class="form-control" type="text" id="enduser" name="enduser"
+                        placeholder="Digite seu Endereço">
+                </div>
+                <div class="p-2">
+                    <label for="CEP">CEP*</label>
+                    <input class="form-control" type="text" id="CEP" name="CEP" placeholder="Digite seu CEP">
+                </div>
+                <div class="p-2">
+                    <label for="numerores">Numero*</label>
+                    <input class="form-control" type="number" id="numerores" name="numerores"
+                        placeholder="Digite seu Numero">
+                </div>
+                <div class="p-2">
+                    <label for="complementores">Complemento</label>
+                    <input class="form-control" type="text" id="complementores" name="complementores"
+                        placeholder="Digite seu Complemento">
+                </div>
+                <div class="p-2">
+                    <label for="bairro">Bairro*</label>
+                    <input class="form-control" type="text" id="bairro" name="bairro" placeholder="Digite seu Bairro">
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="cidade">Cidade*</label>
+                        <input class="form-control" type="text" id="cidade" name="cidade"
+                            placeholder="Digite seu Cidade">
+                    </div>
+                    <div class="col-6">
+                        <label for="cidade" class="row">Estado*</label>
+                        <select name="estado" id="estado">
+                            <option value="" disabled selected> Estado*</option>
+                            <option value="SP">SP</option>
+                            <option value="RJ">RJ</option>
+                            <option value="MG">MG</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="form-groump row">
+                    <div class="col-md-6 ">
+                        <label for="FDE">Frete Rapido* R$50,00 </label>
+                        <input class="form-groump" type="radio" id="FDE" name="FDE">
+
+                    </div>
+                    <div class="col-md-6 ">
+
+                        <label for="FDE">Frete Normal* R$20,00 </label>
+                        <input class="form-groump" type="radio" id="FDE" name="FDE">
+                    </div>
+                </div>
+            </div>
+            <div class="col -md-4">
+                <header class="bg-dark text-light p-2"> pagamentos</header>
+
+                <div class="d-flex justify-content-center flex-column p-2">
+                    <h4>JORDAN AIR 90/CLASSIC</h4>
+                    <p>
+                        <img src="jr.jpg" width="200" height=" 200"> 
+                    </p>
+                    <p>
+                        $ 500,00
+                    </p>
+                    <p class="col-md-6 ">
+                        
+
+                     <label for="comprar">Compra </label>
+                    <input class="form-groump" type="radio" id="comprar" name="comprar">
+                        
+                    </p>
+
+                </div>
+
+                <div class="p-2">
+                    <label for="cartao">NUmero Cartão*</label>
+                    <input class="form-control" type="number" id="cartao" name="cartao" placeholder="Digite seu Cartão">
+                </div>
+                <div class="form-groump row">
+                    <div class="col-md-6">
+                        <label for="datavali">Data de Validade*</label>
+                        <input class="form-control" type="month" id="datavali" name="datavali">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="codsegu">Codigo de Segurança*</label>
+                        <input class="form-control" type="number" id="codsegu" name="codsegu"placeholder="CVV">
+                    </div>
+                </div>
+                <div class="p-2">
+                    <label for="nomeTitular">Nome Tilular*</label>
+                    <input class="form-control" type="text" id="nomeTitular" name="nomeTitular"
+                        placeholder="Digite o Nome do Tilular">
+                </div>
+                <div class="p-2">
+                    <label for="cpfTitular">CPF do Tilular*</label>
+                    <input class="form-control" type="text" id="cpfTitular" name="cpfTitular"placeholder="Digite o CPF do Tilular">
+                </div>
+            </div>
+        </form>
+
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="js.js"></script>
+
+</body>
+
+</html>
